@@ -12,6 +12,11 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: blue;
-  --color-secondary: teal;
+  --color-primary: #fcf4f0;
+  --color-secondary: #ee9be7;
+  --color-description: #e4e4e7;
+}
+
+a.active {
+  @apply border-b-3 border-neutral;
 }
