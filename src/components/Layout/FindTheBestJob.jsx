@@ -18,7 +18,7 @@ const FindTheBestJob = () => {
             placeholder="Enter your dream job..."
             class="flex-grow px-4 py-2 bg-transparent text-white placeholder-gray-400 focus:outline-none"
           />
-          <button class="px-6 py-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full transition-colors duration-300">
+          <button class="px-12 py-7 bg-in bg-gradient-to-br from-primary to-secondary text-white rounded-full btn ">
             Search
           </button>
         </div>

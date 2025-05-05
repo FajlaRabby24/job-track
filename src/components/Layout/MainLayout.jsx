@@ -5,16 +5,16 @@ import { Outlet } from "react-router";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-br from-base-300 to-base-200">
       <header>
         <Navbar />
       </header>
-      <main className="bg-gradient-to-br from-base-300 to-base-200">
+      <main className="mb-28">
         <Outlet />
       </main>
-      <footer>
+      <div className="max-w-7xl mx-auto">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 };
