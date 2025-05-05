@@ -1,0 +1,218 @@
+[
+  {
+    "id": "1",
+    "name": "Google LLC",
+    "logo": "https://i.ibb.co.com/6J1f2svP/gogle.png",
+    "location": "San Francisco, CA",
+    "website": "https://technova.com",
+    "industry": "Software Development",
+    "jobs": [
+      {
+        "id": "job-01-01",
+        "title": "Frontend Developer",
+        "bannerImage": "https://example.com/banners/job-01-01.png",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Frontend Developer position available at a leading company.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Version control using Git"
+        ]
+      },
+      {
+        "id": "job-01-02",
+        "title": "Frontend Developer",
+        "bannerImage": "https://example.com/banners/job-01-01.png",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Frontend Developer position available at a leading company.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Version control using Git"
+        ]
+      },
+      {
+        "id": "job-01-03",
+        "title": "Frontend Developer",
+        "bannerImage": "https://example.com/banners/job-01-01.png",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Frontend Developer position available at a leading company.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Version control using Git"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Apple",
+    "logo": "https://i.ibb.co.com/93kr9yCt/apple.png",
+    "location": "San Francisco, CA",
+    "website": "https://technova.com",
+    "industry": "Software Development",
+    "jobs": [
+      {
+        "id": "job-01-01",
+        "title": "Frontend Developer",
+        "bannerImage": "https://example.com/banners/job-01-01.png",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Frontend Developer position available at a leading company.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Version control using Git"
+        ]
+      },
+      {
+        "id": "job-01-02",
+        "title": "Frontend Developer",
+        "bannerImage": "https://example.com/banners/job-01-01.png",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Frontend Developer position available at a leading company.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Version control using Git"
+        ]
+      },
+      {
+        "id": "job-01-03",
+        "title": "Frontend Developer",
+        "bannerImage": "https://example.com/banners/job-01-01.png",
+        "location": "Remote",
+        "salary": "$70,000 - $90,000",
+        "jobType": "Full-time",
+        "description": "Frontend Developer position available at a leading company.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Version control using Git"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Meta",
+    "logo": "https://i.ibb.co.com/dsQYcgKt/meta.png",
+    "location": "Austin, TX",
+    "website": "https://greenbyte.com",
+    "industry": "Cloud Services",
+    "jobs": [
+      {
+        "id": "job-02-01",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://example.com/banners/job-02-01.png",
+        "location": "Austin, TX",
+        "salary": "$90,000 - $110,000",
+        "jobType": "Full-time",
+        "description": "DevOps Engineer role in a dynamic tech company.",
+        "requirements": [
+          "Knowledge of Docker and Kubernetes",
+          "Experience with RESTful APIs",
+          "Good communication skills",
+          "Experience in Agile/Scrum environments",
+          "Version control using Git"
+        ]
+      },
+      {
+        "id": "job-02-02",
+        "title": "UI/UX Designer",
+        "bannerImage": "https://example.com/banners/job-02-02.png",
+        "location": "Remote",
+        "salary": "$60,000 - $80,000",
+        "jobType": "Contract",
+        "description": "UI/UX Designer needed for product design and usability.",
+        "requirements": [
+          "Strong problem-solving skills",
+          "Good communication skills",
+          "Familiarity with databases like MongoDB or PostgreSQL",
+          "Experience in Agile/Scrum environments",
+          "Proficient in HTML, CSS, and JavaScript"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "BMW",
+    "logo": "https://i.ibb.co.com/wZGJDm5R/bmw.png",
+    "location": "New York, NY",
+    "website": "https://codecrafters.com",
+    "industry": "E-commerce",
+    "jobs": [
+      {
+        "id": "job-03-01",
+        "title": "Full Stack Developer",
+        "bannerImage": "https://example.com/banners/job-03-01.png",
+        "location": "New York, NY",
+        "salary": "$80,000 - $100,000",
+        "jobType": "Full-time",
+        "description": "Build scalable full stack web applications.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Familiarity with databases like MongoDB or PostgreSQL",
+          "Experience with RESTful APIs",
+          "Strong problem-solving skills"
+        ]
+      },
+      {
+        "id": "job-03-02",
+        "title": "Full Stack Developer",
+        "bannerImage": "https://example.com/banners/job-03-01.png",
+        "location": "New York, NY",
+        "salary": "$80,000 - $100,000",
+        "jobType": "Full-time",
+        "description": "Build scalable full stack web applications.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Familiarity with databases like MongoDB or PostgreSQL",
+          "Experience with RESTful APIs",
+          "Strong problem-solving skills"
+        ]
+      },
+      {
+        "id": "job-03-03",
+        "title": "Full Stack Developer",
+        "bannerImage": "https://example.com/banners/job-03-01.png",
+        "location": "New York, NY",
+        "salary": "$80,000 - $100,000",
+        "jobType": "Full-time",
+        "description": "Build scalable full stack web applications.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript",
+          "Experience with React or Vue.js",
+          "Familiarity with databases like MongoDB or PostgreSQL",
+          "Experience with RESTful APIs",
+          "Strong problem-solving skills"
+        ]
+      }
+    ]
+  }
+]

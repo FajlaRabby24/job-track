@@ -30,3 +30,7 @@ a.active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.title {
+  @apply text-4xl font-semibold;
+}
