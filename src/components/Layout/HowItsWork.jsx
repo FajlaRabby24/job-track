@@ -39,12 +39,12 @@ const HowItsWork = () => {
   return (
     <div className="">
       <div className="max-w-7xl mx-auto">
-        <h1 className="title text-white mb-8">How it's work</h1>
+        <h1 className="title text-white mb-10">How it's work</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
           {howWorks.map((work) => (
             <div
               key={work.id}
-              className="px-6 py-4 rounded-xl bg-[#ffffff15] space-y-2"
+              className="px-6 py-4 rounded-xl bg-[#ffffff1d]  space-y-2"
             >
               <img src={work.img} alt="image" />
               <h2 className="text-white text-2xl font-semibold">

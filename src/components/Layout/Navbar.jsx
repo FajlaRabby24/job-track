@@ -23,7 +23,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <nav className={`py-2 bg-gradient-to-br from-base-200 to-base-300 `}>
+    <nav className={`py-1 bg-gradient-to-br from-base-200 to-base-300 `}>
       <div className="navbar max-w-7xl mx-auto backdrop-blur-lg">
         <div className="navbar-start">
           <div className="dropdown">
