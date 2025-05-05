@@ -1,5 +1,4 @@
 import React from "react";
-import line from "../../assets/images/line2.png";
 import signup from "../../assets/images/signup.png";
 import info from "../../assets/images/info.png";
 import payment from "../../assets/images/payment.png";
@@ -14,21 +13,21 @@ const howWorks = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
   },
   {
-    id: 0,
+    id: 1,
     img: info,
     title: "Add your info",
     descrtiption:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
   },
   {
-    id: 0,
+    id: 2,
     img: payment,
     title: "Make a payment",
     descrtiption:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
   },
   {
-    id: 0,
+    id: 3,
     img: result,
     title: "Get the result",
     descrtiption:
@@ -38,14 +37,7 @@ const howWorks = [
 
 const HowItsWork = () => {
   return (
-    <div
-      className="h-screen"
-      style={{
-        backgroundImage: `url(${line})`,
-        backgroundSize: "cover",
-        backgroundPosition: "left",
-      }}
-    >
+    <div className="">
       <div className="max-w-7xl mx-auto">
         <h1 className="title text-white mb-8">How it's work</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">

@@ -1,13 +1,26 @@
 import React from "react";
 import Hero from "../components/Layout/Hero";
 import HowItsWork from "../components/Layout/HowItsWork";
-import line from "../assets/images/line.png";
+import Companies from "../components/Layout/Companies";
+import line from "../assets/images/line2.png";
+import line2 from "../assets/images/line3.png";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
+  const companiesData = useLoaderData();
   return (
-    <div className="bg-gradient-to-br from-base-300 to-base-200  space-y-36">
+    <div
+      className="  space-y-52 "
+      style={{
+        backgroundImage: `url(${line})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
       <Hero />
       <HowItsWork />
+      <Companies companiesData={companiesData} />
     </div>
   );
 };

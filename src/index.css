@@ -32,5 +32,8 @@ a.active {
 }
 
 .title {
-  @apply text-4xl font-semibold;
+  @apply text-5xl font-semibold;
+  background: -webkit-linear-gradient(bottom right, #908be7, #e665a7, #8f8afc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -9,7 +9,7 @@ const MainLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="bg-gradient-to-br from-base-300 to-base-200">
         <Outlet />
       </main>
       <footer>
