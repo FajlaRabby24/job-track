@@ -1,29 +1,30 @@
 import React from "react";
+import { HiChartBar } from "react-icons/hi";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const links = (
     <div className="space-x-7">
-      <NavLink to={"/"} className="text-lg font-semibold">
+      <NavLink to={"/"} className="text-lg font-semibold text-white">
         Find a job
       </NavLink>
-      <NavLink to={"/about"} className="text-lg font-semibold">
+      <NavLink to={"/about"} className="text-lg font-semibold text-white">
         Conpanies
       </NavLink>
-      <NavLink to={"/services"} className="text-lg font-semibold">
+      <NavLink to={"/services"} className="text-lg font-semibold text-white">
         How it's work
       </NavLink>
-      <NavLink to={"/blog"} className="text-lg font-semibold">
+      <NavLink to={"/blog"} className="text-lg font-semibold text-white">
         Blog
       </NavLink>
-      <NavLink to={"/contact"} className="text-lg font-semibold">
+      <NavLink to={"/contact"} className="text-lg font-semibold text-white">
         Contact
       </NavLink>
     </div>
   );
   return (
-    <nav className="max-w-7xl mx-auto ">
-      <div className="navbar ">
+    <nav className={`py-2 bg-gradient-to-br from-base-200 to-base-300 `}>
+      <div className="navbar max-w-7xl mx-auto backdrop-blur-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,8 +50,11 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <Link to={"/"}>
-            <span className="text-3xl font-semibold">HireMe</span>
+          <Link to={"/"} className="flex items-center ">
+            <span className="logo">
+              <HiChartBar size={40} color="white" />
+            </span>
+            <span className="text-2xl font-bold text-white">Jobby</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -58,13 +62,8 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-3">
           <Link to={"/login"}>
-            <button className="btn btn-outline rounded-full p-6 hover:btn-neutral">
+            <button className="btn btn-outline btn-primary hover:bg-gradient-to-br from-primary to-secondary  rounded-full py-6 px-10 text-white ">
               Login
-            </button>
-          </Link>
-          <Link to={"/register"}>
-            <button className="btn btn-neutral rounded-full p-6">
-              Register
             </button>
           </Link>
         </div>

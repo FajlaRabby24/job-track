@@ -12,11 +12,21 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: #fcf4f0;
-  --color-secondary: #ee9be7;
-  --color-description: #e4e4e7;
+  --color-primary-content: #a5a1ff; /* হেডিংয়ের প্রথম অংশ - হালকা নীল/ল্যাভেন্ডার */
+  --color-secondary-content: #df6fa8; /* হেডিংয়ের দ্বিতীয় অংশ - হালকা গোলাপি/ম্যাজেন্টা */
+  --color-primary: #5f5cff; /* CTA বাটনের বেসিক রঙ */
+  --color-secondary: #b46aff; /* CTA বাটনের গ্রেডিয়েন্ট শেষ */
+  --color-accent: #cccccc; /* বর্ণনা টেক্সটের ধূসর রঙ */
+  --color-base-200: #0b0c2a; /* ব্যাকগ্রাউন্ড - গা dark navy blue */
+  --color-base-300: #1b183a; /* ব্যাকগ্রাউন্ড গ্রেডিয়েন্টের দ্বিতীয় অংশ */
 }
 
 a.active {
-  @apply border-b-3 border-neutral;
+  @apply border-b-3 border-white;
+}
+
+.hero-title {
+  background: -webkit-linear-gradient(bottom right, #908be7, #e665a7, #8f8afc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
