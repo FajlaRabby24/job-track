@@ -5,12 +5,13 @@ import Companies from "../components/Layout/Companies";
 import line from "../assets/images/line2.png";
 import { useLoaderData } from "react-router";
 import SimpleStep from "../components/Layout/SimpleStep";
+import FindTheBestJob from "../components/Layout/FindTheBestJob";
 
 const Home = () => {
   const companiesData = useLoaderData();
   return (
     <div
-      className="  space-y-52 "
+      className="  space-y-60 "
       style={{
         backgroundImage: `url(${line})`,
         backgroundPosition: "center",
@@ -21,6 +22,7 @@ const Home = () => {
       <HowItsWork />
       <Companies companiesData={companiesData} />
       <SimpleStep />
+      <FindTheBestJob></FindTheBestJob>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const SimpleStep = () => {
         </div>
       </div>
       <div className="space-y-7 w-2/5">
-        <h1 className="title leading-16">
+        <h1 className="title text-5xl leading-16">
           Simple Step to find your dream Job faster than before
         </h1>
         <ul className="space-y-3">

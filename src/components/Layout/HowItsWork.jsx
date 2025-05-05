@@ -39,7 +39,7 @@ const HowItsWork = () => {
   return (
     <div className="">
       <div className="max-w-7xl mx-auto">
-        <h1 className="title text-white mb-10">How it's work</h1>
+        <h1 className="title text-5xl mb-10">How it's work</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
           {howWorks.map((work) => (
             <div
