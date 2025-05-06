@@ -1,8 +1,11 @@
 import React, { use, useRef } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../store/contexts/contexts";
+import { toast } from "react-toastify";
 
 const Register = () => {
+  const { createUser } = use(AuthContext);
+
   const nameRef = useRef(null);
   const photoRef = useRef(null);
   const emailRef = useRef(null);
@@ -10,6 +13,14 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
+
+    createUser(emailRef.current.value, passwordRef.current.value)
+      .then((result) => {
+        toast.success("User created successfully!");
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   return (
