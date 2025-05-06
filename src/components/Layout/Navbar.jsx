@@ -6,13 +6,11 @@ const Navbar = () => {
   const links = (
     <div className="space-x-7">
       <NavLink to={"/"} className="text-lg font-semibold text-white">
-        Find a job
+        Home
       </NavLink>
+
       <NavLink to={"/about"} className="text-lg font-semibold text-white">
-        Conpanies
-      </NavLink>
-      <NavLink to={"/services"} className="text-lg font-semibold text-white">
-        How it's work
+        About
       </NavLink>
       <NavLink to={"/blog"} className="text-lg font-semibold text-white">
         Blog
@@ -23,7 +21,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <nav className={`py-1 bg-gradient-to-br from-base-200 to-base-300 `}>
+    <nav className={`py-1  backdrop-blur-2xl `}>
       <div className="navbar max-w-7xl mx-auto backdrop-blur-lg">
         <div className="navbar-start">
           <div className="dropdown">

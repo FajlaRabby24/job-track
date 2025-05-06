@@ -6,7 +6,7 @@ import { Outlet } from "react-router";
 const MainLayout = () => {
   return (
     <div className="bg-gradient-to-br from-base-300 to-base-200">
-      <header>
+      <header className="sticky top-0 z-50">
         <Navbar />
       </header>
       <main className="mb8 min-h-[calc(100vh-476px)]">
