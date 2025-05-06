@@ -1,15 +1,77 @@
 import React, { useRef } from "react";
 import { Link } from "react-router";
 
-const Login = () => {
+const Register = () => {
+  const nameRef = useRef(null);
+  const photoRef = useRef(null);
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
   return (
     <div className="card bg-white w-full mt-16 max-w-md shrink-0 pt-6 mx-auto shadow-2xl">
-      <h1 className="title text-3xl text-center">Login your account</h1>
+      <h1 className="title text-3xl text-center">Register your account</h1>
       <div className="card-body">
         <form className="fieldset">
+          {/* name start */}
+          <label className="label">Username</label>
+          <label className="input validator w-full">
+            <svg
+              className="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </g>
+            </svg>
+            <input
+              type="text"
+              required
+              ref={nameRef}
+              placeholder="Username"
+              pattern="[A-Za-z][A-Za-z0-9\-]*"
+              minLength="3"
+              maxLength="30"
+              title="Only letters, numbers or dash"
+            />
+          </label>
+          {/* name end */}
+          {/* photo start  */}
+          <label className="label">Photo URL</label>
+          <label className="input validator w-full">
+            <svg
+              className="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </g>
+            </svg>
+            <input
+              type="url"
+              required
+              ref={photoRef}
+              placeholder="https://photoURL.png"
+              pattern="^(https?://)?([a-zA-Z0-9]([a-zA-Z0-9\-].*[a-zA-Z0-9])?\.)+[a-zA-Z].*$"
+              title="Must be valid URL"
+            />
+          </label>
+          {/* photo end */}
           {/* email start  */}
           <label className="label">Email</label>
           <label className="input validator w-full">
@@ -80,7 +142,7 @@ const Login = () => {
             <a className="link link-hover">Forgot password?</a>
           </div>
           <button className="btn  bg-gradient-to-br from-primary to-secondary border-0 text-white mt-4">
-            Login
+            Register
           </button>
           <div>
             <p className="text-center">
@@ -144,4 +206,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
