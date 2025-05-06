@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Layout/Hero";
 import HowItsWork from "../components/Layout/HowItsWork";
 import Companies from "../components/Layout/Companies";
-import line from "../assets/images/line2.png";
+import line from "../assets/images/line.png";
 import { useLoaderData } from "react-router";
 import SimpleStep from "../components/Layout/SimpleStep";
 import FindTheBestJob from "../components/Layout/FindTheBestJob";
@@ -14,11 +14,13 @@ const Home = () => {
       className="  space-y-60 "
       style={{
         backgroundImage: `url(${line})`,
+        backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
     >
       <Hero />
+
       <HowItsWork />
       <Companies companiesData={companiesData} />
       <SimpleStep />

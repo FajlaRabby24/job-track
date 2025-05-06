@@ -54,7 +54,7 @@ const Navbar = () => {
             <span className="logo">
               <HiChartBar size={40} color="white" />
             </span>
-            <span className="text-2xl font-bold text-white">Jobby</span>
+            <span className="text-2xl font-bold text-white">JobTrack</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

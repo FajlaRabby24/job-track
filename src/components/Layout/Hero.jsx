@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="rounded-2xl min-h-[calc(80vh)] flex items-center gap-10 max-w-7xl mx-auto">
       {/* content  */}
-      <div className=" w-1/2 space-y-8">
+      <div className=" w-1/2 space-y-8 ">
         <h1 className="hero-title text-7xl  font-medium leading-20">
           Best way to find your dream job with more than 1000
         </h1>
@@ -14,7 +14,7 @@ const Hero = () => {
           Search and find your dream Job now easiar then ever, you can simply
           browse and find a Job if you need it.
         </p>
-        <button className="btn bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white">
+        <button className="btn  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white">
           Come Join
         </button>
       </div>
@@ -44,6 +44,7 @@ const Hero = () => {
           <img src={chart} alt="" />
         </div>
       </div>
+      <div className="w-1/3 h-1/3 bottom-   absolute bg-radial rounded-full  from-secondary blur-3xl"></div>
     </div>
   );
 };

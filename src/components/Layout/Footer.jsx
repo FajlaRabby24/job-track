@@ -19,9 +19,9 @@ const Footer = () => {
             <span className="logo">
               <HiChartBar size={50} color="white" />
             </span>
-            <span className="text-3xl font-bold text-white">Jobby</span>
+            <span className="text-3xl font-bold text-white">JobTrack</span>
           </Link>
-          <p className="text-accent font-semibold">hello@jobby.com</p>
+          <p className="text-accent font-semibold">hello@jobtrack.com</p>
           <p className="text-accent font-semibold">+8801344444444</p>
           <div className="flex gap-3 items-center mt-2">
             <FaFacebookF
@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
       <p className="text-accent font-semibold text-center  py-3">
         Copyright &copy; {new Date().getFullYear()}. All rights reserved
-        @jobby.io
+        @jobTrack.io
       </p>
     </footer>
   );
