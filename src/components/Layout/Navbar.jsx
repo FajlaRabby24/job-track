@@ -1,8 +1,12 @@
-import React from "react";
+import React, { use } from "react";
 import { HiChartBar } from "react-icons/hi";
 import { Link, NavLink } from "react-router";
+import { AuthContext } from "../../store/contexts/contexts";
+import userDefaultImage from "../../assets/images/defaultUserImage.png";
 
 const Navbar = () => {
+  const { user } = use(AuthContext);
+
   const links = (
     <div className="space-x-7">
       <NavLink to={"/"} className="text-lg font-semibold text-white">
@@ -59,11 +63,31 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end space-x-3">
-          <Link to={"/login"}>
-            <button className="btn btn-outline btn-primary hover:bg-gradient-to-br from-primary to-secondary  rounded-full py-6 px-10 text-white ">
-              Login
-            </button>
-          </Link>
+          {user ? (
+            <div className="avatar">
+              <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
+                <Link to={"/my-profile"}>
+                  <img
+                    src={user?.photoURL || userDefaultImage}
+                    className="cursor-pointer"
+                  />
+                </Link>
+              </div>
+            </div>
+          ) : (
+            <>
+              <Link to={"/login"}>
+                <button className="btn btn-outline btn-primary hover:bg-gradient-to-br from-primary to-secondary  rounded-full py-6 px-10 text-white ">
+                  Login
+                </button>
+              </Link>
+              <Link to={"/register"}>
+                <button className="btn  bg-gradient-to-br from-primary to-secondary  rounded-full py-6 px-8 text-white ">
+                  Register
+                </button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>

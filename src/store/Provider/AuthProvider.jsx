@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { AuthContext } from "../contexts/contexts";
 import {
   createUserWithEmailAndPassword,
@@ -9,6 +9,8 @@ import {
 import { auth } from "../../firebase/firebase.config";
 
 const AuthProvider = ({ children }) => {
+  const [user, serUser] = useState(null);
+
   // create user
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
@@ -27,12 +29,13 @@ const AuthProvider = ({ children }) => {
   //   onAuthStateChanged
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      serUser(currentUser);
       console.log(currentUser);
     });
     return () => unSubscribe();
   });
 
-  const contextValue = { createUser, updateUserProfile, loginUser };
+  const contextValue = { createUser, updateUserProfile, loginUser, user };
   return <AuthContext value={contextValue}>{children}</AuthContext>;
 };
 

@@ -6,6 +6,7 @@ import Contact from "../pages/Contact";
 import CompanyDetails from "../pages/CompanyDetails";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import MyProfile from "../pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: "register",
         Component: Register,
+      },
+      {
+        path: "my-profile",
+        Component: MyProfile,
       },
     ],
   },
