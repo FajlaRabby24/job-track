@@ -1,10 +1,36 @@
 import React, { use } from "react";
 import { AuthContext } from "../store/contexts/contexts";
+import { toast } from "react-toastify";
+import Swal from "sweetalert2";
+import userDefaultImage from "../assets/images/defaultUserImage.png";
 
 const MyProfile = () => {
-  const { user } = use(AuthContext);
-  //   const { displayName, email, photoURL, metadata } = user;
-  console.log(user);
+  const { user, signOutUser } = use(AuthContext);
+
+  const handleSignOUt = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Sign out!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Sign out successfully!.",
+          icon: "success",
+        });
+        signOutUser()
+          .then(() => {})
+          .catch((error) => {
+            toast.error("Something wrong! Please try again?");
+          });
+      }
+    });
+  };
+
   return (
     <div className="max-w-7xl mx-auto pt-7">
       <h1 className="text-3xl title">Profile</h1>
@@ -16,7 +42,7 @@ const MyProfile = () => {
         <div className="flex flex-col items-center py-8 gap-4 border border-primary rounded-lg w-2/5">
           <div className="avatar avatar-online">
             <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
-              <img src={user?.photoURL} />
+              <img src={user?.photoURL || userDefaultImage} />
             </div>
           </div>
           <h1 className="title text-2xl ">{user?.displayName}</h1>
@@ -52,7 +78,9 @@ const MyProfile = () => {
             <hr className=" border-t border-[#b1b1b13e] border-dashed" />
           </li>
           <div className="mt-4 space-x-4">
-            <button className="btn btn-warning ">Sign out</button>
+            <button onClick={handleSignOUt} className="btn btn-warning ">
+              Sign out
+            </button>
             <button className="btn btn-success ">Update profile</button>
           </div>
         </div>
