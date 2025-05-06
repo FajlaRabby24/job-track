@@ -1,12 +1,24 @@
-import React, { useRef } from "react";
+import React, { use, useRef } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "../store/contexts/contexts";
+import { toast } from "react-toastify";
 
 const Login = () => {
+  const { loginUser } = use(AuthContext);
+
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    loginUser(emailRef.current.value, passwordRef.current.value)
+      .then((result) => {
+        toast.success("Login successfully!");
+      })
+      .catch((error) => {
+        toast.error(`Something wrong! Please try again!`);
+      });
   };
 
   return (

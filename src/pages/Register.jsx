@@ -4,7 +4,7 @@ import { AuthContext } from "../store/contexts/contexts";
 import { toast } from "react-toastify";
 
 const Register = () => {
-  const { createUser } = use(AuthContext);
+  const { createUser, updateUserProfile } = use(AuthContext);
 
   const nameRef = useRef(null);
   const photoRef = useRef(null);
@@ -17,9 +17,17 @@ const Register = () => {
     createUser(emailRef.current.value, passwordRef.current.value)
       .then((result) => {
         toast.success("User created successfully!");
+        updateUserProfile({
+          displayName: nameRef.current.value,
+          photoURL: photoRef.current.value,
+        })
+          .then(() => {})
+          .catch((error) => {
+            toast.error(error.message);
+          });
       })
       .catch((error) => {
-        toast.error(error.message);
+        toast.error(`Something wrong! Please try again!`);
       });
   };
 
