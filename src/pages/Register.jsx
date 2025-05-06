@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { use, useRef } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "../store/contexts/contexts";
 
 const Register = () => {
   const nameRef = useRef(null);
@@ -7,11 +8,15 @@ const Register = () => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
+  const handleRegister = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="card bg-white w-full mt-16 max-w-md shrink-0 pt-6 mx-auto shadow-2xl">
       <h1 className="title text-3xl text-center">Register your account</h1>
       <div className="card-body">
-        <form className="fieldset">
+        <form onSubmit={handleRegister} className="fieldset">
           {/* name start */}
           <label className="label">Username</label>
           <label className="input validator w-full">
@@ -36,10 +41,9 @@ const Register = () => {
               required
               ref={nameRef}
               placeholder="Username"
-              pattern="[A-Za-z][A-Za-z0-9\-]*"
               minLength="3"
               maxLength="30"
-              title="Only letters, numbers or dash"
+              title="Only letters"
             />
           </label>
           {/* name end */}
@@ -138,17 +142,18 @@ const Register = () => {
             At least one uppercase letter
           </p>
           {/* password end  */}
-          <div>
-            <a className="link link-hover">Forgot password?</a>
-          </div>
-          <button className="btn  bg-gradient-to-br from-primary to-secondary border-0 text-white mt-4">
+
+          <button
+            type="submit"
+            className="btn  bg-gradient-to-br from-primary to-secondary border-0 text-white mt-4"
+          >
             Register
           </button>
           <div>
             <p className="text-center">
-              I don't have an account?{" "}
-              <Link to={`/register`} className="text-blue-600 underline">
-                Register
+              I have already an account?{" "}
+              <Link to={`/login`} className="text-blue-600 underline">
+                Login
               </Link>
             </p>
           </div>

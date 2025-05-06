@@ -5,11 +5,15 @@ const Login = () => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
+  const handleLogin = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="card bg-white w-full mt-16 max-w-md shrink-0 pt-6 mx-auto shadow-2xl">
       <h1 className="title text-3xl text-center">Login your account</h1>
       <div className="card-body">
-        <form className="fieldset">
+        <form onSubmit={handleLogin} className="fieldset">
           {/* email start  */}
           <label className="label">Email</label>
           <label className="input validator w-full">
@@ -79,7 +83,10 @@ const Login = () => {
           <div>
             <a className="link link-hover">Forgot password?</a>
           </div>
-          <button className="btn  bg-gradient-to-br from-primary to-secondary border-0 text-white mt-4">
+          <button
+            type="submit"
+            className="btn  bg-gradient-to-br from-primary to-secondary border-0 text-white mt-4"
+          >
             Login
           </button>
           <div>
