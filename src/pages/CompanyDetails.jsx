@@ -4,8 +4,7 @@ import SingleJob from "../components/Layout/SingleJob";
 
 const CompanyDetails = () => {
   const data = useLoaderData();
-  console.log(data);
-  const { id, industry, name, logo, location } = data;
+  const { id, industry, name, logo, location, website } = data;
   return (
     <div className="max-w-7xl mx-auto">
       <h1 className="title text-3xl mb-6 pt-10">Company Details</h1>
@@ -22,7 +21,7 @@ const CompanyDetails = () => {
       <h1 className="title text-2xl mb-6 pt-5">Avalable Jobs</h1>
       <div className="grid grid-cols-1 gap-4 rounded-xl">
         {data.jobs.map((job) => (
-          <SingleJob key={job.id} job={job} />
+          <SingleJob key={job.id} job={job} website={website} />
         ))}
       </div>
     </div>
