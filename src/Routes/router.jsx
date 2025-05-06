@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import CompanyDetails from "../pages/CompanyDetails";
+import Login from "../pages/Login";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
               );
             });
         },
+      },
+      {
+        path: "login",
+        Component: Login,
       },
     ],
   },

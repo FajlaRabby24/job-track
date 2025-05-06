@@ -13,7 +13,7 @@ import { Link } from "react-router";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer sm:footer-horizontal justify-around  text-white pt-28 pb-20  px-10">
+      <div className="footer sm:footer-horizontal justify-around  text-white pt-28 pb-12  px-10">
         <aside>
           <Link to={"/"} className="flex items-center ">
             <span className="logo">
@@ -62,7 +62,7 @@ const Footer = () => {
           <a className="link link-hover">Terms of services</a>
         </nav>
       </div>
-      <p className="text-accent font-semibold text-center  py-3">
+      <p className="text-accent font-semibold text-center  py-2">
         Copyright &copy; {new Date().getFullYear()}. All rights reserved
         @jobTrack.io
       </p>

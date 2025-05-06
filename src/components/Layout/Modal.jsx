@@ -5,7 +5,6 @@ const Modal = ({ isOpen, setIsOpen, job, website }) => {
   const {
     bannerImage,
     description,
-    id,
     jobType,
     location,
     requirements,
