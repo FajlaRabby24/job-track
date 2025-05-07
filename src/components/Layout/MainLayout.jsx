@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Outlet } from "react-router";
+import Loading from "./Loading";
 
 const MainLayout = () => {
   return (
@@ -9,7 +10,7 @@ const MainLayout = () => {
       <header className="sticky top-0 z-50">
         <Navbar />
       </header>
-      <main className="mb8 min-h-[calc(100vh-434px)]">
+      <main className=" min-h-[calc(100vh-434px)]">
         <Outlet />
       </main>
       <div className="max-w-7xl mx-auto">

@@ -7,6 +7,7 @@ import CompanyDetails from "../pages/CompanyDetails";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import MyProfile from "../pages/MyProfile";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +46,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "my-profile",
-        Component: MyProfile,
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

@@ -1,10 +1,11 @@
 import React, { use, useRef } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../store/contexts/contexts";
 import { toast } from "react-toastify";
 
 const Register = () => {
-  const { createUser, updateUserProfile } = use(AuthContext);
+  const navigate = useNavigate();
+  const { createUser, updateUserProfile, signOutUser } = use(AuthContext);
 
   const nameRef = useRef(null);
   const photoRef = useRef(null);
@@ -21,7 +22,14 @@ const Register = () => {
           displayName: nameRef.current.value,
           photoURL: photoRef.current.value,
         })
-          .then(() => {})
+          .then(() => {
+            signOutUser()
+              .then(() => {})
+              .catch((error) => {
+                toast.error("Something wrong! Please try again?");
+              });
+            navigate("/login");
+          })
           .catch((error) => {
             toast.error(error.message);
           });
