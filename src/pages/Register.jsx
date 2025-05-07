@@ -1,10 +1,11 @@
 import React, { use, useRef } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../store/contexts/contexts";
 import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { createUser, updateUserProfile, signOutUser, signInWithGoogle } =
     use(AuthContext);
 
@@ -29,7 +30,7 @@ const Register = () => {
               .catch((error) => {
                 toast.error("Something wrong! Please try again?");
               });
-            navigate("/login");
+            navigate("/");
           })
           .catch((error) => {
             toast.error(error.message);
@@ -44,7 +45,7 @@ const Register = () => {
     signInWithGoogle()
       .then((result) => {
         toast.success("Login successfully!");
-        navigate("/login");
+        navigate(location.state || "/");
       })
       .catch((error) => {
         toast.error(`Something wrong! Please try again!`);

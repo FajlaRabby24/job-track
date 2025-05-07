@@ -3,6 +3,7 @@ import { AuthContext } from "../store/contexts/contexts";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import userDefaultImage from "../assets/images/defaultUserImage.png";
+import { Link } from "react-router";
 
 const MyProfile = () => {
   const { user, signOutUser } = use(AuthContext);
@@ -80,7 +81,9 @@ const MyProfile = () => {
             <button onClick={handleSignOUt} className="btn btn-warning ">
               Sign out
             </button>
-            <button className="btn btn-success ">Update profile</button>
+            <Link to={"/update-profile"}>
+              <button className="btn btn-success ">Update profile</button>
+            </Link>
           </div>
         </div>
       </div>

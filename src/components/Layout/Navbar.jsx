@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-3">
           {user ? (
-            <div className="avatar">
+            <div className="avatar avatar-online">
               <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
                 <Link to={"/my-profile"}>
                   <img
