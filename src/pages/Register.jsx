@@ -5,7 +5,8 @@ import { toast } from "react-toastify";
 
 const Register = () => {
   const navigate = useNavigate();
-  const { createUser, updateUserProfile, signOutUser } = use(AuthContext);
+  const { createUser, updateUserProfile, signOutUser, signInWithGoogle } =
+    use(AuthContext);
 
   const nameRef = useRef(null);
   const photoRef = useRef(null);
@@ -33,6 +34,17 @@ const Register = () => {
           .catch((error) => {
             toast.error(error.message);
           });
+      })
+      .catch((error) => {
+        toast.error(`Something wrong! Please try again!`);
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        toast.success("Login successfully!");
+        navigate("/login");
       })
       .catch((error) => {
         toast.error(`Something wrong! Please try again!`);
@@ -187,7 +199,10 @@ const Register = () => {
         </form>
         <div className="divider">OR</div>
         {/* Google */}
-        <button className="btn bg-white text-black border-[#e5e5e5] shadow-none">
+        <button
+          onClick={handleGoogleSignIn}
+          className="btn bg-white text-black border-[#e5e5e5] shadow-none"
+        >
           <svg
             aria-label="Google logo"
             width="16"

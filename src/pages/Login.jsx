@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { loginUser } = use(AuthContext);
+  const { loginUser, signInWithGoogle } = use(AuthContext);
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -14,6 +14,17 @@ const Login = () => {
     e.preventDefault();
 
     loginUser(emailRef.current.value, passwordRef.current.value)
+      .then((result) => {
+        toast.success("Login successfully!");
+        navigate("/");
+      })
+      .catch((error) => {
+        toast.error(`Something wrong! Please try again!`);
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
       .then((result) => {
         toast.success("Login successfully!");
         navigate("/");
@@ -114,7 +125,10 @@ const Login = () => {
         </form>
         <div className="divider">OR</div>
         {/* Google */}
-        <button className="btn bg-white text-black border-[#e5e5e5] shadow-none">
+        <button
+          onClick={handleGoogleSignIn}
+          className="btn bg-white text-black border-[#e5e5e5] shadow-none"
+        >
           <svg
             aria-label="Google logo"
             width="16"

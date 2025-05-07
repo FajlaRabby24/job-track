@@ -18,8 +18,7 @@ const MyProfile = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          title: "Deleted!",
-          text: "Sign out successfully!.",
+          title: "Sign out successfully!",
           icon: "success",
         });
         signOutUser()
