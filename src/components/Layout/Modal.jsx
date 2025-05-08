@@ -1,5 +1,5 @@
-import React from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
+import React from "react";
 
 const Modal = ({ isOpen, setIsOpen, job, website }) => {
   const {

@@ -1,11 +1,13 @@
 import React, { use, useRef } from "react";
-import { AuthContext } from "../store/contexts/contexts";
-import userDefaultImage from "../assets/images/defaultUserImage.png";
-import { Link, useLocation, useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { toast } from "react-toastify";
+import userDefaultImage from "../assets/images/defaultUserImage.png";
+import useScroolToTop from "../hooks/useScroolToTop";
 import useTitle from "../hooks/useTitle";
+import { AuthContext } from "../store/contexts/contexts";
 
 const UpdateProfile = () => {
+  useScroolToTop();
   useTitle("JobTrack | Update profile");
   const navigate = useNavigate();
   const location = useLocation();

@@ -37,11 +37,3 @@ a.active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.bg {
-  @apply bg-red-500;
-}
-
-.bg2 {
-  @apply bg-amber-300;
-}

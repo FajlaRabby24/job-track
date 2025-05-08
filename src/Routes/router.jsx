@@ -1,18 +1,18 @@
 import { createBrowserRouter } from "react-router";
+import Loading from "../components/Layout/Loading";
 import MainLayout from "../components/Layout/MainLayout";
-import Home from "../pages/Home";
-import NotFound from "../pages/NotFound";
-import Contact from "../pages/Contact";
-import CompanyDetails from "../pages/CompanyDetails";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import MyProfile from "../pages/MyProfile";
-import PrivateRoute from "./PrivateRoute";
-import UpdateProfile from "../pages/UpdateProfile";
-import ResetPassword from "../pages/ResetPassword";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
-import Loading from "../components/Layout/Loading";
+import CompanyDetails from "../pages/CompanyDetails";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import MyProfile from "../pages/MyProfile";
+import NotFound from "../pages/NotFound";
+import Register from "../pages/Register";
+import ResetPassword from "../pages/ResetPassword";
+import UpdateProfile from "../pages/UpdateProfile";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {

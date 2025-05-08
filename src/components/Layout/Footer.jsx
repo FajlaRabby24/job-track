@@ -1,12 +1,6 @@
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
-import {
-  FaCopyright,
-  FaFacebook,
-  FaFacebookF,
-  FaLinkedin,
-} from "react-icons/fa";
-import { HiChartBar } from "react-icons/hi";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { Link } from "react-router";
 

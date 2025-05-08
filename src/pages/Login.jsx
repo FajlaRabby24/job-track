@@ -1,10 +1,12 @@
 import React, { use, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
-import { AuthContext } from "../store/contexts/contexts";
 import { toast } from "react-toastify";
+import useScroolToTop from "../hooks/useScroolToTop";
 import useTitle from "../hooks/useTitle";
+import { AuthContext } from "../store/contexts/contexts";
 
 const Login = () => {
+  useScroolToTop();
   useTitle("JobTrack | Login");
   const navigate = useNavigate();
   const location = useLocation();

@@ -1,8 +1,7 @@
 import React, { use } from "react";
-import { HiChartBar } from "react-icons/hi";
 import { Link, NavLink } from "react-router";
-import { AuthContext } from "../../store/contexts/contexts";
 import userDefaultImage from "../../assets/images/defaultUserImage.png";
+import { AuthContext } from "../../store/contexts/contexts";
 
 const Navbar = () => {
   const { user } = use(AuthContext);

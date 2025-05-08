@@ -1,9 +1,11 @@
 import React, { use, useRef } from "react";
-import { AuthContext } from "../store/contexts/contexts";
 import { toast } from "react-toastify";
+import useScroolToTop from "../hooks/useScroolToTop";
 import useTitle from "../hooks/useTitle";
+import { AuthContext } from "../store/contexts/contexts";
 
 const ResetPassword = () => {
+  useScroolToTop();
   useTitle("JobTrack | Reset password");
   const { resetPasswordEmail, handleResetPasswordEmail } = use(AuthContext);
   const emailRef = useRef(null);

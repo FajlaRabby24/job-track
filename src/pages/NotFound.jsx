@@ -1,9 +1,11 @@
 import React from "react";
-import useTitle from "../hooks/useTitle";
-import error from "../assets/images/error.png";
 import { Link } from "react-router";
+import error from "../assets/images/error.png";
+import useScroolToTop from "../hooks/useScroolToTop";
+import useTitle from "../hooks/useTitle";
 
 const NotFound = () => {
+  useScroolToTop();
   useTitle("Error");
   return (
     <div className="h-screen flex items-center justify-center bg-gradient-to-br from-base-300 to-base-200">

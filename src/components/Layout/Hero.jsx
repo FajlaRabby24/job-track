@@ -1,6 +1,6 @@
 import React from "react";
-import heroImg from "../../assets/images/hero.png";
 import chart from "../../assets/images/chart.gif";
+import heroImg from "../../assets/images/hero.png";
 
 const Hero = () => {
   return (

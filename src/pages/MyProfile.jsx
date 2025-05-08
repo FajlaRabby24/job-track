@@ -1,12 +1,14 @@
 import React, { use } from "react";
-import { AuthContext } from "../store/contexts/contexts";
+import { Link } from "react-router";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import userDefaultImage from "../assets/images/defaultUserImage.png";
-import { Link } from "react-router";
+import useScroolToTop from "../hooks/useScroolToTop";
 import useTitle from "../hooks/useTitle";
+import { AuthContext } from "../store/contexts/contexts";
 
 const MyProfile = () => {
+  useScroolToTop();
   useTitle("JobTrack | My profile");
   const { user, signOutUser } = use(AuthContext);
 

@@ -1,6 +1,6 @@
 import React from "react";
-import simpleStep from "../../assets/images/simpleStepImg.png";
 import { IoMdCheckbox } from "react-icons/io";
+import simpleStep from "../../assets/images/simpleStepImg.png";
 
 const SimpleStep = () => {
   return (

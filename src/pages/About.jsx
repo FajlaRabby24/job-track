@@ -1,11 +1,11 @@
 import React from "react";
-import useTitle from "../hooks/useTitle";
-import documentImg from "../assets/images/document.png";
 import attach from "../assets/images/attach.png";
 import bell from "../assets/images/bell.png";
-import dashboard from "../assets/images/dashboard.png";
 import clock from "../assets/images/clock.png";
+import dashboard from "../assets/images/dashboard.png";
+import documentImg from "../assets/images/document.png";
 import useScroolToTop from "../hooks/useScroolToTop";
+import useTitle from "../hooks/useTitle";
 
 const About = () => {
   useScroolToTop();

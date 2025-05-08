@@ -1,8 +1,8 @@
 import React from "react";
-import signup from "../../assets/images/signup.png";
 import info from "../../assets/images/info.png";
 import payment from "../../assets/images/payment.png";
 import result from "../../assets/images/result.png";
+import signup from "../../assets/images/signup.png";
 
 const howWorks = [
   {
