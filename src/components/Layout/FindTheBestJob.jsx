@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import React from "react";
 import globe from "../../assets/images/globe.png";
 
@@ -26,7 +27,13 @@ const FindTheBestJob = () => {
       </div>
       {/* image  */}
       <div className="">
-        <img className="lg:w-4/5 mx-auto" src={globe} alt="" />
+        <motion.img
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+          className="lg:w-4/5 mx-auto"
+          src={globe}
+          alt=""
+        />
       </div>
     </div>
   );

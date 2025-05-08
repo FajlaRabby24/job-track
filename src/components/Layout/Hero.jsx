@@ -1,10 +1,12 @@
-import React from "react";
+import { motion } from "motion/react";
+import React, { useState } from "react";
 import chart from "../../assets/images/chart.gif";
 import heroImg from "../../assets/images/hero.png";
-import { motion } from "motion/react";
-import { delay } from "motion";
+import rocket from "../../assets/images/rocket.png";
+import rocket2 from "../../assets/images/rocket2.png";
 
 const Hero = () => {
+  const [hide, setHide] = useState(false);
   return (
     <div className="rounded-2xl  lg:min-h-[calc(80vh)] flex flex-col lg:flex-row items-center gap-10 lg:gap-5 max-w-7xl mx-auto pt-8 lg:py-0 px-4 lg">
       {/* content  */}
@@ -26,15 +28,7 @@ const Hero = () => {
         </button>
       </motion.div>
       {/* image  */}
-      <div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.4,
-          scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-        }}
-        className="flex md:w-2/3 lg:w-1/2 items-start  relative"
-      >
+      <div className="flex md:w-2/3 lg:w-1/2 items-start  relative">
         <motion.img
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -91,6 +85,38 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="w-1/3 h-1/3 bottom-   absolute bg-radial rounded-full  from-secondary blur-3xl"></div>
+      {!hide && (
+        <motion.img
+          animate={{
+            x: [0],
+            y: [600, -800],
+          }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+          }}
+          onAnimationComplete={() => setHide(true)}
+          className="w-[200px] absolute mx-auto left-1/2 "
+          src={rocket}
+          alt="rocket image"
+        />
+      )}
+      {!hide && (
+        <motion.img
+          animate={{
+            x: [0],
+            y: [-400, 800],
+          }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+          }}
+          onAnimationComplete={() => setHide(true)}
+          className="w-[200px] absolute mx-auto left-[47%]  "
+          src={rocket2}
+          alt="rocket image"
+        />
+      )}
     </div>
   );
 };
