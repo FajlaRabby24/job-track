@@ -74,7 +74,6 @@ The goal of this project is to create a centralized platform where job seekers c
 - Firebase Authentication
 - Tailwind CSS
 - Framer Motion
-- React Hook Form
 - React Toastify
 - dotenv for environment variables
 

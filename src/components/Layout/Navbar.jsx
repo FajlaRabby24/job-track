@@ -1,10 +1,35 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
+import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 import userDefaultImage from "../../assets/images/defaultUserImage.png";
 import { AuthContext } from "../../store/contexts/contexts";
 
 const Navbar = () => {
-  const { user } = use(AuthContext);
+  const { user, signOutUser } = use(AuthContext);
+
+  const handleSignOUt = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, Sign out!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Sign out successfully!",
+          icon: "success",
+        });
+        signOutUser()
+          .then(() => {})
+          .catch((error) => {
+            toast.error("Something wrong! Please try again?");
+          });
+      }
+    });
+  };
 
   const links = (
     <div className="space-x-7 flex flex-col lg:flex-row  ">
@@ -62,16 +87,22 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-3">
           {user ? (
-            <div className="avatar avatar-online">
-              <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
-                <Link to={"/my-profile"}>
-                  <img
-                    src={user?.photoURL || userDefaultImage}
-                    className="cursor-pointer"
-                  />
-                </Link>
+            <>
+              <div className="avatar avatar-online">
+                <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
+                  <Link to={"/my-profile"}>
+                    <img
+                      src={user?.photoURL || userDefaultImage}
+                      className="cursor-pointer"
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
+              {/* avater end  */}
+              <button onClick={handleSignOUt} className="btn btn-warning ">
+                Sign out
+              </button>
+            </>
           ) : (
             <>
               <Link to={"/login"}>

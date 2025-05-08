@@ -9,7 +9,6 @@ const SingleCompany = ({ company }) => {
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        onHoverStart={() => console.log("hover started!")}
         className="px-4 lg:px-6 py-4 text-center cursor-pointer rounded-xl bg-[#ffffff3c] lg:bg-[#ffffff15] space-y-2 lg:min-h-[207px] lg:max-h-[207px] hover:bg-gradient-to-br from-secondary hover:to-primary "
       >
         <img

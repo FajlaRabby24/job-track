@@ -25,7 +25,7 @@ const UpdateProfile = () => {
       .then(() => {
         toast.success("Profile updated successfully!");
         navigate("/my-profile", { state: location.pathname });
-        window.location.reload();
+        setTimeout(() => window.location.reload(), 1000);
       })
       .catch((error) => {
         toast.error(error.message);

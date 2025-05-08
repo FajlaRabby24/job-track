@@ -1,7 +1,5 @@
 import React, { use } from "react";
 import { Link } from "react-router";
-import { toast } from "react-toastify";
-import Swal from "sweetalert2";
 import userDefaultImage from "../assets/images/defaultUserImage.png";
 import useScroolToTop from "../hooks/useScroolToTop";
 import useTitle from "../hooks/useTitle";
@@ -10,30 +8,30 @@ import { AuthContext } from "../store/contexts/contexts";
 const MyProfile = () => {
   useScroolToTop();
   useTitle("JobTrack | My profile");
-  const { user, signOutUser } = use(AuthContext);
+  const { user } = use(AuthContext);
 
-  const handleSignOUt = () => {
-    Swal.fire({
-      title: "Are you sure?",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, Sign out!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          title: "Sign out successfully!",
-          icon: "success",
-        });
-        signOutUser()
-          .then(() => {})
-          .catch((error) => {
-            toast.error("Something wrong! Please try again?");
-          });
-      }
-    });
-  };
+  // const handleSignOUt = () => {
+  //   Swal.fire({
+  //     title: "Are you sure?",
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#3085d6",
+  //     cancelButtonColor: "#d33",
+  //     confirmButtonText: "Yes, Sign out!",
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       Swal.fire({
+  //         title: "Sign out successfully!",
+  //         icon: "success",
+  //       });
+  //       signOutUser()
+  //         .then(() => {})
+  //         .catch((error) => {
+  //           toast.error("Something wrong! Please try again?");
+  //         });
+  //     }
+  //   });
+  // };
 
   return (
     <div className="max-w-7xl mx-auto pt-7 px-4 ">
@@ -84,9 +82,9 @@ const MyProfile = () => {
             <hr className=" border-t border-[#b1b1b13e] border-dashed" />
           </li>
           <div className="mt-4 space-x-4">
-            <button onClick={handleSignOUt} className="btn btn-warning ">
+            {/* <button onClick={handleSignOUt} className="btn btn-warning ">
               Sign out
-            </button>
+            </button> */}
             <Link to={"/update-profile"}>
               <button className="btn btn-success ">Update profile</button>
             </Link>

@@ -39,7 +39,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "company-details/:name",
-        Component: CompanyDetails,
+        element: (
+          <PrivateRoute>
+            <CompanyDetails />
+          </PrivateRoute>
+        ),
         HydrateFallback: Loading,
         loader: async ({ params }) => {
           return await fetch("/company.json")

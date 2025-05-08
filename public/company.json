@@ -4,7 +4,7 @@
     "name": "Google",
     "logo": "https://i.ibb.co.com/gZH8x8PS/gogle.png",
     "location": "San Francisco, CA",
-    "website": "https://technova.com",
+    "website": "https://www.google.com/",
     "industry": "Software Development",
     "jobs": [
       {
@@ -62,7 +62,7 @@
     "name": "Apple",
     "logo": "https://i.ibb.co.com/JWHjdx7M/apple.png",
     "location": "San Francisco, CA",
-    "website": "https://technova.com",
+    "website": "https://www.apple.com/",
     "industry": "Software Development",
     "jobs": [
       {
@@ -120,7 +120,7 @@
     "name": "Meta",
     "logo": "https://i.ibb.co.com/d9JcVzT/meta.png",
     "location": "Austin, TX",
-    "website": "https://greenbyte.com",
+    "website": "https://www.meta.com/",
     "industry": "Cloud Services",
     "jobs": [
       {
@@ -162,7 +162,7 @@
     "name": "BMW",
     "logo": "https://i.ibb.co.com/RTtjd17H/bmw.png",
     "location": "New York, NY",
-    "website": "https://codecrafters.com",
+    "website": "https://www.bmw.com/en/index.html",
     "industry": "E-commerce",
     "jobs": [
       {
