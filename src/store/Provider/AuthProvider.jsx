@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -16,6 +17,7 @@ const googleProvider = new GoogleAuthProvider();
 const AuthProvider = ({ children }) => {
   const [user, serUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [resetPasswordEmail, setResetPasswordEmail] = useState("");
 
   // create user
   const createUser = (email, password) => {
@@ -46,6 +48,11 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
+  // reset password email
+  const handleResetPasswordEmail = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
   //   onAuthStateChanged
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -64,6 +71,9 @@ const AuthProvider = ({ children }) => {
     signOutUser,
     loading,
     signInWithGoogle,
+    handleResetPasswordEmail,
+    resetPasswordEmail,
+    setResetPasswordEmail,
   };
   return <AuthContext value={contextValue}>{children}</AuthContext>;
 };

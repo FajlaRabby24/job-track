@@ -17,8 +17,8 @@ const Modal = ({ isOpen, setIsOpen, job, website }) => {
       onClose={() => setIsOpen(false)}
       className="relative z-50 "
     >
-      <div className="fixed inset-0 flex w-screen items-center justify-center p-4 backdrop-blur-xl">
-        <DialogPanel className="max-w-5xl grid grid-cols-2 gap-4 space-y-4 px-5 py-4 rounded-xl bg-gradient-to-r from-primary to-base-300">
+      <div className="fixed inset-0 flex w-screen  items-center justify-center p-4 backdrop-blur-xl">
+        <DialogPanel className="max-w-5xl  grid grid-cols-1 md:grid-cols-2 gap-4 space-y-4 px-5 py-4 rounded-xl bg-gradient-to-r from-primary to-base-300">
           <img
             src={bannerImage}
             alt="jobImage"
@@ -44,7 +44,7 @@ const Modal = ({ isOpen, setIsOpen, job, website }) => {
               </div>
             ))}
           </div>
-          <div></div>
+          <div className="hidden md:block"></div>
           <div className="flex justify-end full  gap-4 ">
             <a href={website} target="_blank">
               <button

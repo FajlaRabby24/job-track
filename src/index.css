@@ -2,8 +2,6 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(45deg);
-  /* color: #b5b1f8, #fb99cc */
 }
 
 @import "tailwindcss";
@@ -38,4 +36,12 @@ a.active {
   background: -webkit-linear-gradient(bottom right, #908be7, #e665a7, #8f8afc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg {
+  @apply bg-red-500;
+}
+
+.bg2 {
+  @apply bg-amber-300;
 }

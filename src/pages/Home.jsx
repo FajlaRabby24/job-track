@@ -6,8 +6,10 @@ import line from "../assets/images/line.png";
 import { useLoaderData } from "react-router";
 import SimpleStep from "../components/Layout/SimpleStep";
 import FindTheBestJob from "../components/Layout/FindTheBestJob";
+import useTitle from "../hooks/useTitle";
 
 const Home = () => {
+  useTitle("JobTrack");
   const companiesData = useLoaderData();
   return (
     <div

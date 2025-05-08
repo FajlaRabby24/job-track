@@ -3,8 +3,10 @@ import { AuthContext } from "../store/contexts/contexts";
 import userDefaultImage from "../assets/images/defaultUserImage.png";
 import { Link, useLocation, useNavigate } from "react-router";
 import { toast } from "react-toastify";
+import useTitle from "../hooks/useTitle";
 
 const UpdateProfile = () => {
+  useTitle("JobTrack | Update profile");
   const navigate = useNavigate();
   const location = useLocation();
   const { user, updateUserProfile } = use(AuthContext);
@@ -29,10 +31,11 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="max-w-3xl pt-20  mx-auto">
+    <div className="max-w-3xl pt-20 px-4  mx-auto">
       <h1 className="title mb-4 text-3xl">Update profile</h1>
-      <div className="flex items-stretch  gap-5">
-        <div className="flex flex-col items-center py-8 gap-4 border border-primary rounded-lg w-1/3">
+      <div className="flex items-stretch flex-col md:flex-row  gap-5">
+        {/* image  */}
+        <div className="flex flex-col items-center py-8 gap-4 border border-primary rounded-lg md:w-1/3">
           <div className="avatar avatar-online">
             <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
               <img src={user?.photoURL || userDefaultImage} />
@@ -40,7 +43,8 @@ const UpdateProfile = () => {
           </div>
           <h1 className="title text-2xl ">{user?.displayName}</h1>
         </div>
-        <div className="border border-primary px-6 py-4 rounded-lg w-2/3">
+        {/* content  */}
+        <div className="border border-primary px-6 py-4 rounded-lg md:w-2/3">
           <form onSubmit={handleProfileUpdate}>
             {/* name start */}
             <label className="label text-accent mb-1">Username</label>

@@ -9,6 +9,10 @@ import Register from "../pages/Register";
 import MyProfile from "../pages/MyProfile";
 import PrivateRoute from "./PrivateRoute";
 import UpdateProfile from "../pages/UpdateProfile";
+import ResetPassword from "../pages/ResetPassword";
+import About from "../pages/About";
+import Blog from "../pages/Blog";
+import Loading from "../components/Layout/Loading";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +22,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        HydrateFallback: Loading,
         loader: () => fetch("/company.json"),
       },
       {
@@ -25,8 +30,17 @@ export const router = createBrowserRouter([
         Component: Contact,
       },
       {
+        path: "about",
+        Component: About,
+      },
+      {
+        path: "blog",
+        Component: Blog,
+      },
+      {
         path: "company-details/:name",
         Component: CompanyDetails,
+        HydrateFallback: Loading,
         loader: async ({ params }) => {
           return await fetch("/company.json")
             .then((res) => res.json())
@@ -44,6 +58,10 @@ export const router = createBrowserRouter([
       {
         path: "register",
         Component: Register,
+      },
+      {
+        path: "/reset-password",
+        Component: ResetPassword,
       },
       {
         path: "my-profile",

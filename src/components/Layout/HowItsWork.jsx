@@ -37,26 +37,24 @@ const howWorks = [
 
 const HowItsWork = () => {
   return (
-    <div className="">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="title text-5xl mb-10">How it's work</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
-          {howWorks.map((work) => (
-            <div
-              key={work.id}
-              className="px-6 py-4 rounded-xl bg-[#ffffff1d]  space-y-2"
-            >
-              <img src={work.img} alt="image" />
-              <h2 className="text-white text-2xl font-semibold">
-                {work.title}
-              </h2>
-              <p className="text-accent font-semibold">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, facilis.
-              </p>
-            </div>
-          ))}
-        </div>
+    <div className="max-w-7xl mx-auto  px-4">
+      <h1 className="title text-3xl md:text-5xl mb-6 lg:mb-10">
+        How it's work
+      </h1>
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6 ">
+        {howWorks.map((work) => (
+          <div
+            key={work.id}
+            className="px-3 lg:px-6 py-3 lg:py-4 rounded-xl bg-[#ffffff1d]  space-y-2"
+          >
+            <img src={work.img} alt="image" />
+            <h2 className="text-white text-2xl font-semibold">{work.title}</h2>
+            <p className="text-accent font-semibold">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, facilis.
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
