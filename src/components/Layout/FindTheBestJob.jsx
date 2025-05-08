@@ -10,7 +10,7 @@ const FindTheBestJob = () => {
           Find the best job for you all over the world.
         </h1>
         <p className="text-accent font-semibold">
-          Wit one click, you can instantly find your dream job accuratly and
+          With one click, you can instantly find your dream job accuratly and
           quickly with worlwide coverage, and have an amazing experience.
         </p>
         <div className="flex bg-gray-800 p-2 relative rounded-full shadow-lg w-full md:max-w-md">

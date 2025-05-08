@@ -10,28 +10,27 @@ const howWorks = [
     img: signup,
     title: "Sign UP",
     descrtiption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
+      "Create an account quickly using email or social media credentials.",
   },
   {
     id: 1,
     img: info,
     title: "Add your info",
     descrtiption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
+      "Enter your name, photo, contact details, and job preferences.",
   },
   {
     id: 2,
     img: payment,
     title: "Make a payment",
-    descrtiption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
+    descrtiption: "Securely pay using cards or wallets for premium job access.",
   },
   {
     id: 3,
     img: result,
     title: "Get the result",
     descrtiption:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis.",
+      "Receive personalized job matches and application status instantly via dashboard.",
   },
 ];
 
@@ -49,10 +48,7 @@ const HowItsWork = () => {
           >
             <img src={work.img} alt="image" />
             <h2 className="text-white text-2xl font-semibold">{work.title}</h2>
-            <p className="text-accent font-semibold">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, facilis.
-            </p>
+            <p className="text-accent font-semibold ">{work.descrtiption}</p>
           </div>
         ))}
       </div>

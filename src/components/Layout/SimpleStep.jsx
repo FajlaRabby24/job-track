@@ -23,8 +23,8 @@ const SimpleStep = () => {
               </div>
             </div>
             <p className="text-accent  lg:font-semibold">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Explicabo, recusandae!
+              Software developers build, test, and maintain applications for
+              digital solutions.
             </p>
           </div>
         </div>
