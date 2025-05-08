@@ -14,13 +14,13 @@
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
-        "description": "Frontend Developer position available at a leading company.",
+        "description": "We're looking for a skilled frontend developer to design and develop engaging UI components for large-scale web applications.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Strong problem-solving skills",
-          "Good communication skills",
-          "Version control using Git"
+          "Proficient in HTML, CSS, JavaScript",
+          "Expertise in React.js and Redux",
+          "Familiarity with responsive design principles",
+          "Experience with REST APIs",
+          "Understanding of performance optimization"
         ]
       },
       {
@@ -30,12 +30,12 @@
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
-        "description": "Backend Developer position available at a leading company.",
+        "description": "Join our backend team to build scalable APIs, manage databases, and support high-performance applications.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Strong problem-solving skills",
-          "Good communication skills",
+          "Proficiency in Node.js and Express",
+          "Experience with MongoDB or PostgreSQL",
+          "Understanding of RESTful and GraphQL APIs",
+          "Familiarity with authentication and security",
           "Version control using Git"
         ]
       },
@@ -46,13 +46,13 @@
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
-        "description": "UI/UX Designer position available at a leading company.",
+        "description": "Design intuitive user interfaces and craft seamless user experiences across web and mobile platforms.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Strong problem-solving skills",
-          "Good communication skills",
-          "Version control using Git"
+          "Proficient in Figma, Adobe XD or Sketch",
+          "Understanding of UX research and user journey mapping",
+          "Strong visual design and typography skills",
+          "Experience designing for accessibility (WCAG)",
+          "Good communication and collaboration skills"
         ]
       }
     ]
@@ -68,49 +68,49 @@
       {
         "id": "job-01-01",
         "title": "Frontend Developer",
-        "bannerImage": "https://i.ibb.co.com/4n6Zsxw8/frontend.jpg",
+        "bannerImage": "https://i.ibb.co.com/DfH81PR0/frontend.jpg",
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
-        "description": "Frontend Developer position available at a leading company.",
+        "description": "Develop high-quality user interfaces for innovative Apple web products used by millions.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
+          "Strong proficiency in JavaScript (ES6+)",
           "Experience with React or Vue.js",
-          "Strong problem-solving skills",
-          "Good communication skills",
-          "Version control using Git"
+          "Ability to write clean, modular CSS (SCSS, Tailwind preferred)",
+          "Familiarity with modern build tools like Webpack or Vite",
+          "Cross-browser compatibility awareness"
         ]
       },
       {
         "id": "job-01-02",
         "title": "Backend Developer",
-        "bannerImage": "https://i.ibb.co.com/qYND7pTH/backend.jpg",
+        "bannerImage": "https://i.ibb.co.com/7xQjYYMQ/backend2.jpg",
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
-        "description": "Frontend Developer position available at a leading company.",
+        "description": "Design secure and high-performance backend services for Apple’s next-gen applications.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Strong problem-solving skills",
-          "Good communication skills",
-          "Version control using Git"
+          "Experience with Node.js, Python, or Go",
+          "Database design experience (SQL/NoSQL)",
+          "Deep knowledge of API architecture",
+          "CI/CD and testing experience",
+          "Cloud experience (AWS or GCP)"
         ]
       },
       {
         "id": "job-01-03",
         "title": "UI/UX Designer",
-        "bannerImage": "https://i.ibb.co.com/0SnBsdP/ui.jpg",
+        "bannerImage": "https://i.ibb.co.com/nNW46jMF/ui1.jpg",
         "location": "Remote",
         "salary": "$70,000 - $90,000",
         "jobType": "Full-time",
-        "description": "Frontend Developer position available at a leading company.",
+        "description": "Help shape the user experience of Apple’s web-based platforms with innovative designs.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Strong problem-solving skills",
-          "Good communication skills",
-          "Version control using Git"
+          "Strong portfolio showcasing UI/UX design",
+          "Knowledge of mobile-first and responsive design",
+          "Usability testing and analytics experience",
+          "Proficient in design tools like Figma",
+          "Strong collaboration and communication skills"
         ]
       }
     ]
@@ -126,33 +126,33 @@
       {
         "id": "job-02-01",
         "title": "DevOps Engineer",
-        "bannerImage": "https://i.ibb.co.com/qYND7pTH/backend.jpg",
+        "bannerImage": "https://i.ibb.co.com/nGPsNWp/backend.jpg",
         "location": "Austin, TX",
         "salary": "$90,000 - $110,000",
         "jobType": "Full-time",
-        "description": "DevOps Engineer role in a dynamic tech company.",
+        "description": "Maintain and optimize CI/CD pipelines, automate infrastructure, and monitor system health.",
         "requirements": [
-          "Knowledge of Docker and Kubernetes",
-          "Experience with RESTful APIs",
-          "Good communication skills",
-          "Experience in Agile/Scrum environments",
-          "Version control using Git"
+          "Experience with Docker, Kubernetes, and Terraform",
+          "Cloud infrastructure knowledge (AWS, Azure)",
+          "Proficiency in scripting (Bash, Python)",
+          "Monitoring tools (Prometheus, Grafana)",
+          "Strong understanding of networking & security"
         ]
       },
       {
         "id": "job-02-02",
         "title": "UI/UX Designer",
-        "bannerImage": "https://i.ibb.co.com/0SnBsdP/ui.jpg",
+        "bannerImage": "https://i.ibb.co.com/xS97mHB7/ui2.jpg",
         "location": "Remote",
         "salary": "$60,000 - $80,000",
         "jobType": "Contract",
-        "description": "UI/UX Designer needed for product design and usability.",
+        "description": "Collaborate with cross-functional teams to craft engaging interfaces for Meta’s cloud-based tools.",
         "requirements": [
-          "Strong problem-solving skills",
-          "Good communication skills",
-          "Familiarity with databases like MongoDB or PostgreSQL",
-          "Experience in Agile/Scrum environments",
-          "Proficient in HTML, CSS, and JavaScript"
+          "Experience with responsive and adaptive design",
+          "Ability to conduct user research and usability testing",
+          "Familiarity with cloud product UX patterns",
+          "Experience with design systems",
+          "Proficient in HTML/CSS for prototyping"
         ]
       }
     ]
@@ -168,49 +168,49 @@
       {
         "id": "job-03-01",
         "title": "Full Stack Developer",
-        "bannerImage": "https://i.ibb.co.com/qYND7pTH/backend.jpg",
+        "bannerImage": "https://i.ibb.co.com/S7VmXQGc/frontend1.jpg",
         "location": "New York, NY",
         "salary": "$80,000 - $100,000",
         "jobType": "Full-time",
-        "description": "Build scalable full stack web applications.",
+        "description": "Design and implement modern web applications using both frontend and backend technologies.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Familiarity with databases like MongoDB or PostgreSQL",
-          "Experience with RESTful APIs",
-          "Strong problem-solving skills"
+          "Experience with MERN stack (MongoDB, Express, React, Node.js)",
+          "REST and GraphQL API development",
+          "Unit testing and debugging skills",
+          "Familiarity with Docker",
+          "Strong understanding of software architecture"
         ]
       },
       {
         "id": "job-03-02",
         "title": "Developer",
-        "bannerImage": "https://i.ibb.co.com/4n6Zsxw8/frontend.jpg",
+        "bannerImage": "https://i.ibb.co.com/7dNrJr5Z/backend1.jpg",
         "location": "New York, NY",
         "salary": "$80,000 - $100,000",
         "jobType": "Full-time",
-        "description": "Build scalable full stack web applications.",
+        "description": "Contribute to BMW's digital platforms by developing and optimizing software modules.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Familiarity with databases like MongoDB or PostgreSQL",
-          "Experience with RESTful APIs",
-          "Strong problem-solving skills"
+          "Experience in JavaScript, TypeScript",
+          "Knowledge of microservices architecture",
+          "CI/CD pipelines familiarity",
+          "API integration and testing",
+          "Good problem-solving abilities"
         ]
       },
       {
         "id": "job-03-03",
         "title": "Mern Stack Developer",
-        "bannerImage": "https://i.ibb.co.com/qYND7pTH/backend.jpg",
+        "bannerImage": "https://i.ibb.co.com/nGPsNWp/backend.jpg",
         "location": "New York, NY",
         "salary": "$80,000 - $100,000",
         "jobType": "Full-time",
-        "description": "Build scalable full stack web applications.",
+        "description": "Develop high-performance e-commerce applications using the MERN stack.",
         "requirements": [
-          "Proficient in HTML, CSS, and JavaScript",
-          "Experience with React or Vue.js",
-          "Familiarity with databases like MongoDB or PostgreSQL",
-          "Experience with RESTful APIs",
-          "Strong problem-solving skills"
+          "Strong experience in React and Node.js",
+          "Database skills with MongoDB",
+          "Familiarity with Redux or Context API",
+          "Experience deploying on cloud platforms",
+          "Attention to detail and code quality"
         ]
       }
     ]
