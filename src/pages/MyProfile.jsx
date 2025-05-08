@@ -10,29 +10,6 @@ const MyProfile = () => {
   useTitle("JobTrack | My profile");
   const { user } = use(AuthContext);
 
-  // const handleSignOUt = () => {
-  //   Swal.fire({
-  //     title: "Are you sure?",
-  //     icon: "warning",
-  //     showCancelButton: true,
-  //     confirmButtonColor: "#3085d6",
-  //     cancelButtonColor: "#d33",
-  //     confirmButtonText: "Yes, Sign out!",
-  //   }).then((result) => {
-  //     if (result.isConfirmed) {
-  //       Swal.fire({
-  //         title: "Sign out successfully!",
-  //         icon: "success",
-  //       });
-  //       signOutUser()
-  //         .then(() => {})
-  //         .catch((error) => {
-  //           toast.error("Something wrong! Please try again?");
-  //         });
-  //     }
-  //   });
-  // };
-
   return (
     <div className="max-w-7xl mx-auto pt-7 px-4 ">
       <h1 className="text-3xl title">Profile</h1>
@@ -82,9 +59,6 @@ const MyProfile = () => {
             <hr className=" border-t border-[#b1b1b13e] border-dashed" />
           </li>
           <div className="mt-4 space-x-4">
-            {/* <button onClick={handleSignOUt} className="btn btn-warning ">
-              Sign out
-            </button> */}
             <Link to={"/update-profile"}>
               <button className="btn btn-success ">Update profile</button>
             </Link>

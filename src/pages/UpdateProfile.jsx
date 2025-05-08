@@ -17,7 +17,6 @@ const UpdateProfile = () => {
 
   const handleProfileUpdate = (e) => {
     e.preventDefault();
-    console.log(nameRef.current.value, photoRef.current.value);
     updateUserProfile({
       displayName: nameRef.current.value,
       photoURL: photoRef.current.value,
