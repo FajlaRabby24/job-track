@@ -79,6 +79,16 @@ The goal of this project is to create a centralized platform where job seekers c
 
 ---
 
+## 🛠️ Run Locally
+
+1. Clone the project
+
+```bash
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/FajlaRabby24/job-track.git)
+
+
+---
+
 ## 🔐 Environment Variables
 
 Create a `.env` file and add the following Firebase keys:
