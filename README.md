@@ -4,7 +4,7 @@ JobTrack is an innovative and user-friendly web application designed to help job
 
 ---
 
-<img src="https://i.ibb.co/Ld8GcRyQ/Screenshot-2025-06-25-144550.png" align="center" style="width: 100%" />
+<img src="https://i.ibb.co/BH0hcm3S/Screenshot-2025-06-25-144536.png" align="center" style="width: 100%" />
 
 ## 🔗 Live Website
 
