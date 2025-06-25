@@ -84,8 +84,8 @@ The goal of this project is to create a centralized platform where job seekers c
 1. Clone the project
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/FajlaRabby24/job-track.git)
-
+git clone https://github.com/FajlaRabby24/job-track.git
+```
 
 ---
 
