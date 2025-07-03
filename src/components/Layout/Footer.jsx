@@ -5,17 +5,21 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer sm:footer-horizontal lg:justify-around  text-white pt-28 pb-12 px-4 lg:px-10">
-        <aside>
+    <footer className="bg-[#0d0c29]">
+      <div className="footer sm:footer-horizontal lg:justify-around   text-white pt-28 pb-12 px-4 lg:px-10">
+        <aside className="flex flex-col items-center">
           <Link to={"/"} className="flex items-center ">
             <img src="./logo.png" className="w-1/4 " alt="" />
             <span className="text-2xl lg:text-3xl font-bold text-white">
               JobTrack
             </span>
           </Link>
-          <p className="text-accent font-semibold">hello@jobtrack.com</p>
-          <p className="text-accent font-semibold">+8801344444444</p>
+          <p className="text-accent font-semibold text-center">
+            fajlarabby.dev@gmail.com
+          </p>
+          <p className="text-accent  font-semibold text-center">
+            +8801307495864
+          </p>
           <div className="flex gap-3 items-center mt-2">
             <a target="_blank" href="https://github.com/FajlaRabby24">
               <IoLogoGithub
@@ -37,29 +41,9 @@ const Footer = () => {
             </a>
           </div>
         </aside>
-        <nav>
-          <h6 className="footer-title">Products</h6>
-          <a className="link link-hover">Fetures</a>
-          <a className="link link-hover">Security</a>
-          <a className="link link-hover">Get app</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Support</h6>
-          <a className="link link-hover">Member</a>
-          <a className="link link-hover">Employes</a>
-          <a className="link link-hover">Career</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of condition</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-          <a className="link link-hover">Terms of services</a>
-        </nav>
       </div>
       <p className="text-accent md:font-semibold text-center  py-2">
         Copyright &copy; {new Date().getFullYear()}. All rights reserved
-        @jobTrack.io
       </p>
     </footer>
   );
