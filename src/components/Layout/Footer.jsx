@@ -1,6 +1,5 @@
-import React from "react";
 import { BsTwitterX } from "react-icons/bs";
-import { FaFacebookF, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { Link } from "react-router";
 
@@ -18,22 +17,24 @@ const Footer = () => {
           <p className="text-accent font-semibold">hello@jobtrack.com</p>
           <p className="text-accent font-semibold">+8801344444444</p>
           <div className="flex gap-3 items-center mt-2">
-            <FaFacebookF
-              size={40}
-              className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
-            />
-            <IoLogoGithub
-              size={40}
-              className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
-            />
-            <FaLinkedin
-              size={40}
-              className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
-            />
-            <BsTwitterX
-              size={40}
-              className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
-            />
+            <a target="_blank" href="https://github.com/FajlaRabby24">
+              <IoLogoGithub
+                size={40}
+                className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
+              />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/fajla">
+              <FaLinkedin
+                size={40}
+                className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
+              />
+            </a>
+            <a target="_blank" href="https://x.com/FajlaRabby24">
+              <BsTwitterX
+                size={40}
+                className="p-2  bg-gradient-to-br from-primary to-secondary border-0 rounded-full btn-xl text-white"
+              />
+            </a>
           </div>
         </aside>
         <nav>
